@@ -12,36 +12,11 @@
         <section id="Seleccionar-Loomian:">    
             
             <h2>Elige tu Loomian:</h2>
-             
-            <input type="radio" id="watery" name="loomian"/>
-            <label for="watery"> Watery</label>
-
-            <input type="radio" id="chomperion" name="loomian"/>
-            <label for="chomperion">Chomperion</label>
-
-            <input type="radio" id="ashy" name="loomian"/>
-            <label for="ashy"> Ashy</label>
             
-            <input type="radio" id="fliyer" name="loomian"/>
-            <label for="fliyer"> Fliyer </label>
-
-            <input type="radio" id="windy" name="loomian"/>
-            <label for= "windy"> Windy</label>
-
-            <input type="radio" id="osxilion" name="loomian"/>
-            <label for= "osxilion"> Osxiliony</label>
-
-            <input type="radio" id="oceany" name="loomian"/>
-            <label for= "oceany"> Oceany</label>
-
-            <input type="radio" id="kloder" name="loomian"/>
-            <label for="kloder"> Kloder</label>
-
-            <input type="radio" id="carpyos" name="loomian"/>
-            <label for="carpyos"> Carpyos</label>
-
-            <input type="radio" id="evanence" name="loomian"/>
-            <label for="evanence"> Evanence</label>
+            <!-- Pokemon options will be dynamically loaded from PokéAPI -->
+            <div id="pokemon-options">
+                <p>Loading Pokemon from PokéAPI...</p>
+            </div>
             
             <button id="boton-loomian"> Seleccionar</button>
         
@@ -50,19 +25,20 @@
          <section id="Seleccionar-ataque">                       
            
             <h2>Elige tu ATAQUE:</h2>
-            <p>Tu Loomian tiene <span>3</span> vidas</p>
-              <p>El Loomian del enemigo tiene <span>3</span> vidas</p>
+            <p id="round-info">Round 0 of 3</p>
+            <p>Tu Loomian tiene <span id="player-hp">100</span> HP</p>
+            <p>El Loomian del enemigo tiene <span id="opponent-hp">100</span> HP</p>
             <p>
-                <button id="boton-fuego">Fuego 🔥</button>
-                <button id="boton-agua">Agua 🌊</button>
-                <button id="boton-planta">Planta 🌱</button>
-                <button id="boton-aire">Aire 🌪️</button>
-                <button id="boton-volador">Volador 🪽</button>
+                <button id="boton-fuego" disabled>Fuego 🔥</button>
+                <button id="boton-agua" disabled>Agua 🌊</button>
+                <button id="boton-planta" disabled>Planta 🌱</button>
+                <button id="boton-aire" disabled>Aire 🌪️</button>
+                <button id="boton-volador" disabled>Volador 🪽</button>
             </p>
         </section>
 
         <section id="Mensajes">
-            <p>Tu Loomian atacó con Fuego, el loomian del enemigo atacó con  - Victoria! </p>
+            <p>Select your Pokemon and start a new battle!</p>
         </section>
         <section id="reinciar">
                 <button id="reiniciar">Reiniciar</button>
